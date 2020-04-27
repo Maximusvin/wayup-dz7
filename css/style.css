@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('../fonts/museosans/museosanscyrl-100.eot');
+  src: url('../fonts/museosans/museosanscyrl-100.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museosans/museosanscyrl-100.woff2') format('woff2'), url('../fonts/museosans/museosanscyrl-100.woff') format('woff'),
+    url('../fonts/museosans/museosanscyrl-100.ttf') format('truetype'),
+    url('../fonts/museosans/museosanscyrl-100.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/museosans/museosanscyrl-300.eot');
+  src: url('../fonts/museosans/museosanscyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museosans/museosanscyrl-300.woff2') format('woff2'), url('../fonts/museosans/museosanscyrl-300.woff') format('woff'),
+    url('../fonts/museosans/museosanscyrl-300.ttf') format('truetype'),
+    url('../fonts/museosans/museosanscyrl-300.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans 300italic';
+  src: url('../fonts/museosans/museosanscyrl-300italic.eot');
+  src: url('../fonts/museosans/museosanscyrl-300italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museosans/museosanscyrl-300italic.woff2') format('woff2'),
+    url('../fonts/museosans/museosanscyrl-300italic.woff') format('woff'),
+    url('../fonts/museosans/museosanscyrl-300italic.ttf') format('truetype'),
+    url('../fonts/museosans/museosanscyrl-300italic.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/museosans/museosanscyrl-900.eot');
+  src: url('../fonts/museosans/museosanscyrl-900.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museosans/museosanscyrl-900.woff2') format('woff2'), url('../fonts/museosans/museosanscyrl-900.woff') format('woff'),
+    url('../fonts/museosans/museosanscyrl-900.ttf') format('truetype'),
+    url('../fonts/museosans/museosanscyrl-900.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/natasha/natasha.eot');
+  src: url('../fonts/natasha/natasha.eot?#iefix') format('embedded-opentype'), url('../fonts/natasha/natasha.woff2') format('woff2'),
+    url('../fonts/natasha/natasha.woff') format('woff'), url('../fonts/natasha/natasha.ttf') format('truetype'),
+    url('../fonts/natasha/natasha.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/stroke-gap-icons/stroke-gap-icons.eot');
+  src: url('../fonts/stroke-gap-icons/stroke-gap-icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.woff2') format('woff2'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.woff') format('woff'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.ttf') format('truetype'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.svg#svgFontName') format('svg');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  border: none;
+  display: inline-block;
+}
+
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  bottom: 0px;
+  padding: 0px;
+  word-spacing: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
