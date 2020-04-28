@@ -726,7 +726,7 @@ body {
   }
 
   .skills__icon::after {
-    left: 80px;
+    left: 80.5px;
   }
 
   .work__list {
@@ -735,7 +735,6 @@ body {
   }
 
   .work__item {
-    width: 90%;
     margin-bottom: 15px;
   }
 
