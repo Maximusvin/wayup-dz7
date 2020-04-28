@@ -429,6 +429,10 @@ body {
   position: relative;
 }
 
+.skills__item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
 .skills__icon {
   font-family: 'Museo Sans 100';
   font-size: 13px;
@@ -445,7 +449,7 @@ body {
   margin-right: 25px;
 }
 
-.skills__icon::before {
+.skills__icon::after {
   content: '';
   display: block;
   position: absolute;
@@ -482,6 +486,10 @@ body {
 
 .work__item {
   width: 300px;
+}
+
+.work__item:not(:last-of-type) {
+  margin-right: 20px;
 }
 
 .work__overlay-wrap {
@@ -543,4 +551,200 @@ body {
   text-transform: uppercase;
   color: #91928f;
   letter-spacing: 0.14em;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+
+  .about__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about__text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .about__info {
+    width: 100%;
+  }
+
+  .merit__list {
+    justify-content: space-around;
+  }
+
+  .contact__wrap {
+    justify-content: space-around;
+  }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    margin-bottom: 180px;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .menu {
+    margin-bottom: 15px;
+  }
+
+  .offer {
+    margin-bottom: 200px;
+  }
+
+  .offer__title {
+    font-size: 39px;
+  }
+
+  .offer__subtitle {
+    font-size: 19px;
+  }
+
+  .skills__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .skills__item {
+    width: 210px;
+    margin-bottom: 20px;
+  }
+
+  .skills__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .navigation {
+    margin-bottom: 120px;
+  }
+
+  .menu__link {
+    font-size: 11px;
+  }
+
+  .offer__title {
+    font-size: 25px;
+  }
+
+  .offer__subtitle {
+    font-size: 15px;
+  }
+
+  .arrow {
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .about__wrap {
+    text-align: center;
+  }
+
+  .merit__list {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .merit__item {
+    margin-bottom: 25px;
+  }
+
+  .contact__wrap {
+    flex-direction: column;
+  }
+
+  .contact__icon-box {
+    flex-direction: column;
+  }
+
+  .contact__link-box {
+    margin-bottom: 20px;
+  }
+
+  .contact__icon {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .skills__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .skills__item {
+    flex-direction: column;
+  }
+
+  .skills__icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .skills__icon::after {
+    left: 80px;
+  }
+
+  .work__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__item {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .work__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 50px 0;
+    text-align: center;
+  }
 }
