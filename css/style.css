@@ -688,7 +688,11 @@ body {
   }
 
   .merit__item {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+  }
+
+  .merit__icon {
+    margin-bottom: 30px;
   }
 
   .contact__wrap {
