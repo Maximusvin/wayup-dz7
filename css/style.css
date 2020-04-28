@@ -385,7 +385,6 @@ body {
   width: 255px;
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 .contact__icon {
@@ -395,11 +394,16 @@ body {
   height: 64px;
   border-radius: 50%;
   background-color: rgba(32, 77, 21, 0.078);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 64px;
+  text-align: center;
   margin-right: 18px;
   color: #204d15;
+  transition: all 0.1s linear;
+}
+
+.contact__icon-box:hover .contact__icon,
+.contact__icon-box:focus .contact__icon {
+  background-color: rgba(32, 77, 21, 0.2);
 }
 
 .contact__text {
