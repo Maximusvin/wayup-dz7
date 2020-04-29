@@ -554,15 +554,15 @@ body {
 @media screen and (max-width: 1200px) {
 }
 
+h2,
+h3 {
+  text-align: center;
+}
+
 /* 768-992px */
 @media screen and (max-width: 992px) {
   .container {
     width: 700px;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
   }
 
   .about__wrap {
