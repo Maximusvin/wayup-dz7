@@ -150,13 +150,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  padding-top: 53px;
+  padding-bottom: 82px;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 53px;
   margin-bottom: 286px;
 }
 
@@ -246,10 +247,6 @@ body {
 .arrow:focus {
   background-color: rgba(106, 109, 106, 0.4);
   transform: translateY(2px);
-}
-
-.header .container {
-  padding-bottom: 82px;
 }
 
 .about {
@@ -429,12 +426,8 @@ body {
 .skills__item {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: calc(100% / 4);
   position: relative;
-}
-
-.skills__item:not(:last-of-type) {
-  margin-right: 20px;
 }
 
 .skills__icon {
@@ -451,6 +444,7 @@ body {
   padding-left: 5px;
   transition: all 0.2s linear;
   margin-right: 25px;
+  display: flex;
 }
 
 .skills__icon::after {
@@ -490,15 +484,12 @@ body {
 
 .work__item {
   width: 300px;
+  position: relative;
+  transition: all 0.2s linear;
 }
 
 .work__item:not(:last-of-type) {
   margin-right: 20px;
-}
-
-.work__overlay-wrap {
-  position: relative;
-  transition: all 0.2s linear;
 }
 
 .overlay {
@@ -533,8 +524,8 @@ body {
   padding-bottom: 3px;
 }
 
-.work__item:hover .work__overlay-wrap,
-.work__item:focus .work__overlay-wrap {
+.work__item:hover,
+.work__item:focus {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0 rgba(43, 86, 33, 0.5);
 }
@@ -569,6 +560,11 @@ body {
     width: 700px;
   }
 
+  h2,
+  h3 {
+    text-align: center;
+  }
+
   .about__wrap {
     display: flex;
     flex-direction: column;
@@ -585,11 +581,32 @@ body {
   }
 
   .merit__list {
-    justify-content: space-around;
+    max-width: 450px;
+    margin: 40px auto 50px;
   }
 
   .contact__wrap {
-    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact__title {
+    margin-bottom: 20px;
+  }
+
+  .skills__list {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .skills__item {
+    width: 220px;
+    margin-bottom: 40px;
+  }
+
+  .skills__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
@@ -616,25 +633,16 @@ body {
     margin-bottom: 200px;
   }
 
-  .offer__title {
-    font-size: 39px;
+  .work__list {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .offer__subtitle {
-    font-size: 19px;
+  .work__item {
+    margin-bottom: 40px;
   }
 
-  .skills__list {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .skills__item {
-    width: 210px;
-    margin-bottom: 20px;
-  }
-
-  .skills__item:nth-of-type(2n) {
+  .work__item:not(:last-of-type) {
     margin-right: 0;
   }
 
@@ -654,30 +662,29 @@ body {
     margin-bottom: 120px;
   }
 
-  .menu__link {
-    font-size: 11px;
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .offer {
+    margin-bottom: 160px;
   }
 
   .offer__title {
-    font-size: 25px;
+    font-size: 43px;
   }
 
-  .offer__subtitle {
-    font-size: 15px;
+  h2 {
+    font-size: 33px;
   }
 
   .arrow {
     letter-spacing: 1px;
-  }
-
-  h2 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 17px;
-    text-align: center;
   }
 
   .about__wrap {
@@ -691,7 +698,11 @@ body {
   }
 
   .merit__item {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+  }
+
+  .merit__item:last-child {
+    margin-bottom: 0;
   }
 
   .merit__icon {
@@ -707,7 +718,7 @@ body {
   }
 
   .contact__link-box {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .contact__icon {
@@ -718,6 +729,14 @@ body {
   .skills__list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .skills__item:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+
+  .skills__item:last-child {
+    margin-bottom: 0;
   }
 
   .skills__item:not(:last-of-type) {
@@ -734,20 +753,11 @@ body {
   }
 
   .skills__icon::after {
-    left: 80.5px;
-  }
-
-  .work__list {
-    flex-direction: column;
-    align-items: center;
+    left: 85.5px;
   }
 
   .work__item {
-    margin-bottom: 15px;
-  }
-
-  .work__item:not(:last-of-type) {
-    margin-right: 0;
+    width: 260px;
   }
 
   .footer {
