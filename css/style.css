@@ -671,6 +671,10 @@ h3 {
     margin-right: 0;
   }
 
+  .menu__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
   .offer {
     margin-bottom: 160px;
   }
